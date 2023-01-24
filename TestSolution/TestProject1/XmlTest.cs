@@ -11,7 +11,7 @@ public class UnitTest1
 
         var values = parser.GetValuesByTag("PaidAmount");
         
-        var castedValues = values.Select(x => Convert.ToDouble(x));
+        var castedValues = values.Select(x => Convert.ToDouble(x)); //it should be decimal when we work with money
 
         const double expectedResult = 3.50;
 
